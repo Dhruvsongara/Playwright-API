@@ -23,7 +23,7 @@ test("Network interception mock API response", async ({ page }) => {
 
   const body = await response.json();
 
-  console.log(body);
+//   console.log(body);
 
 //   expect(body[0].name).toBe("doggie");
 });
