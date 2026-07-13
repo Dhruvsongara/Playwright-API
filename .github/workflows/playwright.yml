@@ -1,4 +1,4 @@
-# name: Playwright Tests
+name: Playwright Tests
 
 on:
   push:
@@ -25,8 +25,8 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Install Playwright browsers
-        run: npx playwright install --with-deps
+      - name: Install Chromium browser
+        run: npx playwright install --with-deps chromium
 
       - name: Remove old database files
         run: |
