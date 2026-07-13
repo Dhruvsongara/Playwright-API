@@ -109,7 +109,7 @@ test.describe("Local rate-limit retry testing", () => {
     test("Send five requests concurrently", async ({ request }) => {
     const results = await Promise.all(
         Array.from({ length: 5 }, () =>
-        request.get("/users/1")
+        request.get("https://dummyjson.com/users/1")
         )
     );
 
